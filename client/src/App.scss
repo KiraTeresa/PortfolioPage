@@ -43,13 +43,15 @@ Colors
   --------------------------------------------- 
   */
 
-  @font-face {
-    font-family: 'ZenDots';
-    src: url(./assets/fonts/ZenDots-Regular.ttf) format('truetype');
-  }
+  // @font-face {
+  //   font-family: 'ZenDots';
+  //   src: url('./assets/fonts/ZenDots-Regular.ttf') format('truetype');
+  // }
+
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 
   .zenDots {
-    font-family: 'ZenDots', sans-serif;
+    font-family: 'Zen Dots';
   }
 
   section {

@@ -5,9 +5,9 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <nav className="dark">
-      <div>
+      <div className="zenDots">
         <Link to="/">
-          Home
+          Kira Teresa Soba
         </Link>
       </div>
 
