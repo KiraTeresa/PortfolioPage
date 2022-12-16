@@ -1,0 +1,105 @@
+.App {
+  /* 
+---------------------------------------------
+Colors
+--------------------------------------------- 
+*/
+
+  .dark {
+    background-color: #051A16;
+    color: #F6F9F8;
+  }
+
+  .light {
+    background-color: #F6F9F8;
+    color: #051A16;
+  }
+
+  /* 
+  ---------------------------------------------
+  Reset CSS
+  --------------------------------------------- 
+  */
+
+  * {
+    // margin: 0 auto;
+    // padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    // text-align: center;
+  }
+
+  a {
+    display: block;
+    color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* 
+  ---------------------------------------------
+  Global Styles
+  --------------------------------------------- 
+  */
+
+  @font-face {
+    font-family: 'ZenDots';
+    src: url(./assets/fonts/ZenDots-Regular.ttf) format('truetype');
+  }
+
+  .zenDots {
+    font-family: 'ZenDots', sans-serif;
+  }
+
+  section {
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 550px;
+    width: 80%;
+    max-width: 1232px;
+    // border: 1px solid #051A16;
+
+
+    /* 
+  ---------------------------------------------
+  breakpoint 1024px
+  --------------------------------------------- 
+  */
+    @media (max-width: 1024px) {
+
+      border: purple solid 1px;
+      max-width: 976px;
+      margin: auto;
+
+    }
+
+    /* 
+  ---------------------------------------------
+  breakpoint 768px
+  --------------------------------------------- 
+  */
+    @media (max-width: 768px) {
+
+      border: blue solid 1px;
+      max-width: 736;
+      margin: auto;
+
+    }
+
+    /* 
+---------------------------------------------
+breakpoint 480px
+--------------------------------------------- 
+*/
+    @media (max-width: 480px) {
+
+      border: green solid 1px;
+      max-width: 90%;
+      margin: auto;
+      padding-left: 0;
+      padding-right: 0;
+
+    }
+  }
+}

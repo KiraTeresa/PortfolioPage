@@ -1,0 +1,16 @@
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    &>div {
+        width: 50%;
+        border: red dotted 1px;
+
+        &.info {
+            padding: 20px 10px;
+            text-align: left;
+            border: yellow 1px solid;
+        }
+    }
+}

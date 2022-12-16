@@ -1,0 +1,19 @@
+nav {
+    // border: red dotted 1px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+    font-size: 18px;
+
+    div {
+        display: flex;
+        gap: 10px;
+
+        // a {
+        //     button {
+        //         background-color: none;
+        //     }
+        // }
+    }
+
+}
