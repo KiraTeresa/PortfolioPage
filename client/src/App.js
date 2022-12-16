@@ -6,6 +6,7 @@ import AboutPage from "./pages/AboutPage/AboutPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 import { Routes, Route } from "react-router-dom";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         <Route path="/contact" element={<ContactPage/>}/> */}
 
         <Route path="*" element={<NotFoundPage />} />
-      </Routes>      
+      </Routes>
+
+      <Footer/>      
     </div>
   );
 }

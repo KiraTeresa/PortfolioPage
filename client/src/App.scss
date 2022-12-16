@@ -37,6 +37,15 @@ Colors
     text-decoration: none;
   }
 
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 32px;
+  }
+
   /* 
   ---------------------------------------------
   Global Styles
@@ -54,14 +63,35 @@ Colors
     font-family: 'Zen Dots';
   }
 
+  button {
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 18px;
+
+    &.btn-1 {
+      background-color: #F6F9F8;
+      color: #F1875E;
+    }
+
+    &.btn-2 {
+      background-color: #F1875E;
+      color: #F6F9F8;
+    }
+  }
+
   section {
     margin: 0 auto;
-    padding: 20px;
-    min-height: 550px;
+    // padding: 20px;
+    min-height: 50vh;
+    // max-height: 600px;
     width: 80%;
     max-width: 1232px;
     // border: 1px solid #051A16;
 
+    &.top {
+      margin-top: 70px;
+    }
 
     /* 
   ---------------------------------------------

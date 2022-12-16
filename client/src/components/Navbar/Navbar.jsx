@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import Home from "../../assets/images/KiraTeresaSoba.png"
 
 
 function Navbar() {
   return (
     <nav className="dark">
-      <div className="zenDots">
+      <div className="zenDots home-link">
         <Link to="/">
-          Kira Teresa Soba
+          <img src={Home} alt="KiraTeresaSoba" />
         </Link>
       </div>
 

@@ -1,18 +1,11 @@
 .introduction {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    background-image: url(../../assets/images/ks22-037-marcgilsdorf-Kopie.png);
-    background-size: contain;
-    background-position: bottom left;
-    background-repeat: no-repeat;
-
-    // .imgWrapper {
-    //     width: 35%;
-    // }
+    padding-bottom: 0;
+    // border: yellow dashed 1px;
 
     .text {
-        // flex-grow: 1;
         height: fit-content;
         width: fit-content;
         font-size: 50px;
@@ -21,12 +14,37 @@
         justify-content: center;
         align-items: flex-end;
         background-color: #051A16;
-        // border: yellow 1px dashed;
 
         p {
             width: 350px;
             margin: 0;
             text-align: start;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+
+        .text {
+            align-items: center;
+            width: 100%;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        img {
+            max-width: 100%;
+        }
+
+        .text {
+            p {
+                width: 100%;
+                word-break: normal;
+            }
         }
     }
 }
