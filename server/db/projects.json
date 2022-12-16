@@ -11,7 +11,7 @@
             "cloudinary",
             "socket.io"
         ],
-        "image": "image",
+        "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/BiMusic_Screenshot_qvpfhg.png",
         "published": "November 12, 2022"
     },
     {
@@ -25,7 +25,7 @@
             "mongoDB",
             "handlebars"
         ],
-        "image": "image",
+        "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
         "published": "September 12, 2022"
     },
     {
@@ -36,7 +36,7 @@
             "JavaScript",
             "p5.js"
         ],
-        "image": "image",
+        "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/ClimbingGame_Screenshot_wvnw7m.png",
         "published": "July 12, 2022"
     }
 ]
