@@ -5,7 +5,7 @@ function Introduction() {
     return (
         <div className='dark'>
             <section className='introduction top'>
-                <div>
+                <div className='img-wrapper'>
                     <img src={MeImage} alt="Kira Teresa Soba" />
                 </div>
                 <div className='text'>

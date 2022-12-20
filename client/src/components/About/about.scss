@@ -5,6 +5,11 @@
     padding-bottom: 0;
     // border: yellow dashed 1px;
 
+    .img-wrapper {
+        // border: yellow dashed 1px;
+        align-self: flex-end;
+    }
+
     .text {
         height: fit-content;
         width: fit-content;
