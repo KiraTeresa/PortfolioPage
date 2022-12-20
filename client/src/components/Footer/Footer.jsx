@@ -8,8 +8,8 @@ function Footer() {
             <div className='footer-wrapper'>
                 <div>Kira Teresa Soba, visit me on </div>
                 <div>
-                    <img src={GitHub} alt="GitHub Logo" />
-                    <img src={LinkedIn} alt="LinkedIn Logo" />
+                    <a href="https://github.com/KiraTeresa"><img src={GitHub} alt="GitHub Logo" /></a>
+                    <a href="https://www.linkedin.com/in/kira-teresa-soba/"><img src={LinkedIn} alt="LinkedIn Logo" /></a>
                 </div>
             </div>
         </footer>
