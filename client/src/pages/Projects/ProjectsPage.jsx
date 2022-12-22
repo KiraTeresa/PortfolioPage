@@ -3,7 +3,8 @@ import ProjectCard from "../../components/Projects/ProjectCard";
 import apiClient from "../../services/apiClient";
 
 function ProjectsPage() {
-    const [dark, setDark] = useState(true)
+    // const [isOdd, setIsOdd] = useState(false)
+    let isOdd = false
     const [isLoading, setIsLoading] = useState(true)
     const [projects, setProjects] = useState([])
 
@@ -19,8 +20,10 @@ function ProjectsPage() {
 
     return (
         <>
-            {projects.map(proj =>
-                <ProjectCard props={proj} />
+            {projects.map(proj => {
+                isOdd = !isOdd;
+                return <ProjectCard props={{ proj, isOdd }} key={proj.no} />
+            }
             )}
         </>
     )

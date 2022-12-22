@@ -2,13 +2,14 @@ import './Projects.scss'
 
 
 function ProjectCard({ props }) {
-    const { name, description, image } = props
+    const { name, description, image } = props.proj;
+    const isOdd = props.isOdd;
 
     return (
         <div className='dark'>
-            <section className='project-card'>
+            <section className={`project-card `}>
                 <h2 className='latesProj'>{window.location.pathname === "/" ? "</> Latest project" : ""}</h2>
-                <div className='project-wrapper'>
+                <div className={`project-wrapper ${isOdd ? '' : 'even'}`}>
                     <div className='info'>
                         <h3>{name}</h3>
                         <div className='short-description'>
