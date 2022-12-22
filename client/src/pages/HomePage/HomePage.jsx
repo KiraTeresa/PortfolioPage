@@ -22,7 +22,7 @@ function HomePage() {
     <div>
       <Introduction />
       <Quotation />
-      <ProjectCard props={latestProject} />
+      <ProjectCard props={{ proj: latestProject }} />
     </div>
   );
 }
