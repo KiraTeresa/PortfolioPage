@@ -1,23 +1,8 @@
-import { useEffect, useState } from 'react';
 import './Projects.scss'
-import apiClient from '../../services/apiClient';
 
-function ProjectCard() {
-    const [isLoading, setIsLoading] = useState(true)
-    const [latestProject, setLatestProject] = useState({})
 
-    useEffect(() => {
-        apiClient.get("/projects/latest").then(result => {
-            console.log(result);
-            setLatestProject(result.data)
-        }).catch(err => console.log("Error: ", err)).finally(() => setIsLoading(false))
-    }, [])
-
-    if (isLoading) {
-        return <div>Loading....</div>
-    }
-
-    const { name, description, image } = latestProject
+function ProjectCard({ props }) {
+    const { name, description, image } = props
 
     return (
         <div className='dark'>
