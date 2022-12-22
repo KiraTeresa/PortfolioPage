@@ -1,7 +1,6 @@
 import Introduction from "../../components/About/Introduction";
 import Quotation from "../../components/About/Quotation";
 import ProjectCard from "../../components/Projects/ProjectCard";
-import "./HomePage.css";
 import apiClient from '../../services/apiClient';
 import { useEffect, useState } from 'react';
 
