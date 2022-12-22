@@ -22,7 +22,7 @@ function ProjectCard() {
     return (
         <div className='dark'>
             <section className='project-card'>
-                <h2>{window.location.pathname === "/" ? "</> Latest project" : ""}</h2>
+                <h2 className='latesProj'>{window.location.pathname === "/" ? "</> Latest project" : ""}</h2>
                 <div className='project-wrapper'>
                     <div className='info'>
                         <h3>{name}</h3>

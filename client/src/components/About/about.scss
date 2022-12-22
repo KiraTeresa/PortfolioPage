@@ -21,9 +21,10 @@
         background-color: #051A16;
 
         p {
-            width: 350px;
+            width: 500px;
             margin: 0;
             text-align: start;
+            // border: yellow dashed 1px;
         }
     }
 
@@ -63,5 +64,37 @@
         text-align: center;
         font-size: 40px;
         font-style: italic;
+    }
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+        font-size: 24px;
+        line-height: 125%;
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+.stack-wrapper {
+    // border: yellow dashed 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+
+    ul {
+        font-size: 32px;
+
+        li {
+            list-style: none;
+            line-height: 150%;
+        }
     }
 }

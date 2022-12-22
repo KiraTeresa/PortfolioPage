@@ -4,6 +4,10 @@
     // align-items: center;
     justify-content: center;
 
+    .latesProj {
+        margin-bottom: 50px;
+    }
+
     .project-wrapper {
         display: flex;
         gap: 50px;
@@ -39,6 +43,11 @@
         font-size: 24px;
     }
 
+    &:hover {
+        img {
+            filter: none;
+        }
+    }
 
     @media (max-width: 1024px) {
         .project-wrapper {

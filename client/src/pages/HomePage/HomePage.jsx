@@ -1,5 +1,5 @@
 import Introduction from "../../components/About/Introduction";
-import Quotation from "../../components/About/quotation";
+import Quotation from "../../components/About/Quotation";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import "./HomePage.css";
 
