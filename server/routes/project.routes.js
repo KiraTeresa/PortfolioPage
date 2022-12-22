@@ -3,7 +3,7 @@ const projects = require("../db/projects.json")
 
 // GET all projects
 router.get("/", (req, res, next) => {
-    res.json("All projects")
+    res.json(projects)
 })
 
 // GET latest project
