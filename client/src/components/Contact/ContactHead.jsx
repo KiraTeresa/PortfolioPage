@@ -9,8 +9,8 @@ function ContactHead() {
                 </div>
                 <div className='text'>
                     <p>Lets connect</p>
-                    <p className='zenDots'>Linkedin</p>
-                    <p className='zenDots'>GitHub</p>
+                    <a href="https://www.linkedin.com/in/kira-teresa-soba/"><p className='zenDots'>Linkedin</p></a>
+                    <a href="https://github.com/KiraTeresa"><p className='zenDots'>GitHub</p></a>
                 </div>
             </section>
         </div>

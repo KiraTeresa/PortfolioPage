@@ -1,0 +1,20 @@
+.contact {
+    .form {
+        display: flex;
+        // justify-content: flex-start;
+        align-items: center;
+        gap: 100px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 30%;
+
+            label {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
