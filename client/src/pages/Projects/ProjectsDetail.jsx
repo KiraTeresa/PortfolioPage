@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import apiClient from "../../services/apiClient";
+import ProjectCard from "../../components/Projects/ProjectCard"
+import Features from "../../components/Projects/Features";
+import Technologies from "../../components/Projects/Technologies";
+import Screenshots from "../../components/Projects/Screenshots";
 
 function ProjectsDetail() {
     const { slug } = useParams()
@@ -15,13 +19,16 @@ function ProjectsDetail() {
         return <div>Loading....</div>
     }
 
-    const { title, description, image } = project
+    const { description, tech, screenshots } = project
 
     return (
-        <div>
-            <h1>Project {title}</h1>
-            <div>{description}</div>
-            <div>{image}</div>
+        <div className='proj-detail-wrapper'>
+            <ProjectCard props={{ proj: project, isOdd: true }} />
+            <Features props={{ description }} />
+            <Technologies props={{ tech }} />
+            <Screenshots props={{ screenshots }} />
+            {/* <div>{description}</div>
+            <div>{image}</div> */}
         </div>
     )
 }

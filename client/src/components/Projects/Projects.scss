@@ -1,3 +1,22 @@
+.proj-detail-wrapper {
+    .screenshot-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        // border: red dashed 1px;
+        // max-width: 100vh;
+        // height: 200px;
+    }
+
+    .screenshot {
+        max-width: 30%;
+        // max-height: 100%;
+        border-radius: 25px;
+        // border: blue solid 1px;
+    }
+
+}
+
 .project-card {
     display: flex;
     flex-direction: column;

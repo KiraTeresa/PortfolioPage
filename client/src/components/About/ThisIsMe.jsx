@@ -1,7 +1,7 @@
 function ThisIsMe() {
     return (
         <div className='light'>
-            <section className='me'>
+            <section className='about'>
                 <h2 className='zenDots'>This is me</h2>
                 <div>
                     <p>I am a Web Developer with a background in business, marketing and e-commerce.</p>

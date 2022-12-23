@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Projects.scss'
+const slugify = require('slugify')
 
 
 function ProjectCard({ props }) {
-    const { name, description, image } = props.proj;
+    const { name, introduction, image, deployment } = props.proj;
     const isOdd = props.isOdd;
-    const slugify = require('slugify')
+    const slug = slugify(name)
 
     return (
         <div className='dark'>
@@ -15,9 +16,11 @@ function ProjectCard({ props }) {
                     <div className='info'>
                         <h3>{name}</h3>
                         <div className='short-description'>
-                            {description}
+                            {introduction}
                         </div>
-                        <Link to={`/projects/${slugify(name)}`}><button className='btn-1'>Read more</button></Link>
+                        {window.location.pathname === `/projects/${slug}` ?
+                            <a href={deployment}><button className='btn-1'>See deployment</button></a> :
+                            <Link to={`/projects/${slug}`}><button className='btn-1'>Read more</button></Link>}
                     </div>
                     <div>
                         <img src={image} alt={`${name} screenshot`} />
