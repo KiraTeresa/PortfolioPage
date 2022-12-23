@@ -4,16 +4,37 @@
         // justify-content: flex-start;
         align-items: center;
         gap: 100px;
+        border: red dashed 1px;
+
+        // h2 {
+        //     align-self: center;
+        // }
 
         form {
             display: flex;
             flex-direction: column;
             gap: 10px;
-            width: 30%;
+            width: 50%;
+            // min-height: 100%;
+            border: blue solid 1px;
+            font-size: 20px;
 
             label {
                 display: flex;
                 flex-direction: column;
+                font-weight: bold;
+            }
+
+            input,
+            textarea {
+                margin-top: 5px;
+                padding: 10px;
+                background-color: #D9D9D9;
+                border: none;
+            }
+
+            textarea {
+                height: 100px;
             }
         }
     }
