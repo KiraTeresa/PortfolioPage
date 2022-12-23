@@ -22,6 +22,7 @@
     flex-direction: column;
     // align-items: center;
     justify-content: center;
+    // border: dotted pink 1px;
 
     .latesProj {
         margin-bottom: 50px;
@@ -31,7 +32,7 @@
         display: flex;
         gap: 50px;
         // border: yellow dashed 1px;
-        height: fit-content;
+        // height: 100%;
 
         &.even {
             flex-direction: row-reverse;
@@ -44,6 +45,7 @@
             justify-content: center;
             gap: 20px;
             width: 50%;
+            // height: auto;
             border-radius: 25px;
             // border: red dotted 1px;
 
@@ -59,7 +61,15 @@
             height: 100%;
             border-radius: 25px;
             align-self: end;
+            // opacity: .25;
+            // border: yellow 1px solid;
         }
+
+        // &:hover {
+        //     img {
+        //         opacity: 1;
+        //     }
+        // }
     }
 
     .short-description {

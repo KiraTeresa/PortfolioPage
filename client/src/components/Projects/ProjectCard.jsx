@@ -6,15 +6,16 @@ const slugify = require('slugify')
 function ProjectCard({ props }) {
     const { name, introduction, image, deployment } = props.proj;
     const isOdd = props.isOdd;
+    const onHomepage = (window.location.pathname === "/")
     const slug = slugify(name)
 
     return (
         <div className='dark'>
             <section className={`project-card `}>
-                <h2 className='latesProj'>{window.location.pathname === "/" ? "</> Latest project" : ""}</h2>
+                <h2 className='latesProj'>{onHomepage ? "</> Latest project" : ""}</h2>
                 <div className={`project-wrapper ${isOdd ? '' : 'even'}`}>
                     <div className='info'>
-                        <h3>{name}</h3>
+                        {onHomepage ? <h3>{name}</h3> : <h3>{`< ${name} />`}</h3>}
                         <div className='short-description'>
                             {introduction}
                         </div>
