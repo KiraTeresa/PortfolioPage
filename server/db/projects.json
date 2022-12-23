@@ -2,6 +2,8 @@
     {
         "no": 3,
         "name": "BiMusic",
+        "deployment": "https://bimusic.netlify.app/",
+        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tech": [
             "React.js",
@@ -12,11 +14,30 @@
             "socket.io"
         ],
         "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/BiMusic_Screenshot_qvpfhg.png",
+        "screenshots": [
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/BiMusic_Screenshot_qvpfhg.png",
+                "no": 1,
+                "alt": "alt-text-1"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/BiMusic_Screenshot_qvpfhg.png",
+                "no": 2,
+                "alt": "alt-text-2"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/BiMusic_Screenshot_qvpfhg.png",
+                "no": 3,
+                "alt": "alt-text-3"
+            }
+        ],
         "published": "November 12, 2022"
     },
     {
         "no": 2,
         "name": "HelgaHelps",
+        "deployment": "https://helgahelps.cyclic.app/",
+        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tech": [
             "JavaScript",
@@ -26,17 +47,53 @@
             "handlebars"
         ],
         "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
+        "screenshots": [
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
+                "no": 1,
+                "alt": "alt-text-1"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
+                "no": 2,
+                "alt": "alt-text-2"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
+                "no": 3,
+                "alt": "alt-text-3"
+            }
+        ],
         "published": "September 12, 2022"
     },
     {
         "no": 1,
         "name": "Climbing Game",
+        "deployment": "https://kirateresa.github.io/climbing-game-project/",
+        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         "tech": [
             "JavaScript",
             "p5.js"
         ],
         "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/ClimbingGame_Screenshot_wvnw7m.png",
+        "screenshots": [
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/ClimbingGame_Screenshot_wvnw7m.png",
+                "no": 1,
+                "alt": "alt-text-1"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/ClimbingGame_Screenshot_wvnw7m.png",
+                "no": 2,
+                "alt": "alt-text-2"
+            },
+            {
+                "link": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/ClimbingGame_Screenshot_wvnw7m.png",
+                "no": 3,
+                "alt": "alt-text-3"
+            }
+        ],
         "published": "July 12, 2022"
     }
 ]
