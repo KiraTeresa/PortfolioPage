@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
 import './Projects.scss'
 
 
 function ProjectCard({ props }) {
     const { name, description, image } = props.proj;
     const isOdd = props.isOdd;
+    const slugify = require('slugify')
 
     return (
         <div className='dark'>
@@ -15,7 +17,7 @@ function ProjectCard({ props }) {
                         <div className='short-description'>
                             {description}
                         </div>
-                        <button className='btn-1'>Read more</button>
+                        <Link to={`/projects/${slugify(name)}`}><button className='btn-1'>Read more</button></Link>
                     </div>
                     <div>
                         <img src={image} alt={`${name} screenshot`} />

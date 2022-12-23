@@ -9,7 +9,8 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 import { Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer';
-import LegalNotice from './components/LegalNotice/LegalNotice';
+import LegalNotice from './pages/LegalNotice/LegalNotice';
+import ProjectsDetail from './pages/Projects/ProjectsDetail';
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
       <Navbar />
       
       <Routes>
-        <Route  path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage/>}/>
+        <Route path="/projects/:slug" element={<ProjectsDetail/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/legal-notice" element={<LegalNotice/>}/>
 
