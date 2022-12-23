@@ -9,6 +9,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 import { Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer';
+import LegalNotice from './components/LegalNotice/LegalNotice';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
+        <Route path="/legal-notice" element={<LegalNotice/>}/>
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
