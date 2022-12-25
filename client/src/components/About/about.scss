@@ -16,6 +16,8 @@
         }
     }
 
+
+
     .text {
         height: fit-content;
         width: fit-content;
@@ -25,12 +27,14 @@
         justify-content: center;
         align-items: flex-start;
         background-color: #051A16;
+        overflow: hidden;
         // border: turquoise dotted 1px;
 
         p {
             max-width: 500px;
             margin: 0;
             text-align: start;
+            position: relative;
             // border: yellow dashed 1px;
         }
     }

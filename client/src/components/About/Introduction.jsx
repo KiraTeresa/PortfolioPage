@@ -9,8 +9,8 @@ function Introduction() {
                     <img src={MeImage} alt="Kira Teresa Soba" />
                 </div>
                 <div className='text'>
-                    <p>Hi. I'm Kira</p>
-                    <p className='zenDots'>Fullstack Web Developer</p>
+                    <p className='slideOut'>Hi. I'm Kira</p>
+                    <p className='zenDots slideOut'>Fullstack Web Developer</p>
                 </div>
             </section >
         </div>

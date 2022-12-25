@@ -95,10 +95,10 @@ Colors
     }
 
     /* 
-  ---------------------------------------------
-  breakpoint 1024px
-  --------------------------------------------- 
-  */
+    ---------------------------------------------
+    breakpoint 1024px
+    --------------------------------------------- 
+    */
     @media (max-width: 1024px) {
 
       border: purple solid 1px;
@@ -108,10 +108,10 @@ Colors
     }
 
     /* 
-  ---------------------------------------------
-  breakpoint 768px
-  --------------------------------------------- 
-  */
+    ---------------------------------------------
+    breakpoint 768px
+    --------------------------------------------- 
+    */
     @media (max-width: 768px) {
 
       border: blue solid 1px;
@@ -121,10 +121,10 @@ Colors
     }
 
     /* 
----------------------------------------------
-breakpoint 480px
---------------------------------------------- 
-*/
+    ---------------------------------------------
+    breakpoint 480px
+    --------------------------------------------- 
+    */
     @media (max-width: 480px) {
 
       border: green solid 1px;
@@ -134,5 +134,43 @@ breakpoint 480px
       padding-right: 0;
 
     }
+  }
+
+
+  /* 
+  ---------------------------------------------
+  slide animations
+  --------------------------------------------- 
+  */
+  @keyframes slideOut {
+    0% {
+      left: 0px;
+    }
+
+    100% {
+      left: 150%;
+    }
+  }
+
+  .slideOut {
+    animation-name: slideOut;
+    animation-duration: 2s;
+    animation-delay: 3s;
+  }
+
+  @keyframes slideIn {
+    0% {
+      left: 150%;
+    }
+
+    100% {
+      left: 0px;
+    }
+  }
+
+  .slideIn {
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-delay: 3s;
   }
 }
