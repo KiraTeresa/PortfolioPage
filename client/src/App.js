@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import Footer from './components/Footer/Footer';
 import LegalNotice from './pages/LegalNotice/LegalNotice';
 import ProjectsDetail from './pages/Projects/ProjectsDetail';
+import Loading from './components/Loading/Loading';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/projects/:slug" element={<ProjectsDetail/>}/>
         <Route path="/contact" element={<ContactPage/>}/>
         <Route path="/legal-notice" element={<LegalNotice/>}/>
+
+        <Route path="/loader" element={<Loading/>}/>
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

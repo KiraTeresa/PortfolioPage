@@ -156,6 +156,7 @@ Colors
     animation-name: slideOut;
     animation-duration: 2s;
     animation-delay: 3s;
+    animation-fill-mode: forwards;
   }
 
   @keyframes slideIn {
@@ -172,5 +173,6 @@ Colors
     animation-name: slideIn;
     animation-duration: 2s;
     animation-delay: 3s;
+    animation-fill-mode: forwards;
   }
 }
