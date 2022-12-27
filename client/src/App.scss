@@ -142,37 +142,37 @@ Colors
   slide animations
   --------------------------------------------- 
   */
-  @keyframes slideOut {
-    0% {
-      left: 0px;
-    }
+  // @keyframes slideOut {
+  //   0% {
+  //     left: 0px;
+  //   }
 
-    100% {
-      left: 150%;
-    }
-  }
+  //   100% {
+  //     left: 150%;
+  //   }
+  // }
 
-  .slideOut {
-    animation-name: slideOut;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-  }
+  // .slideOut {
+  //   animation-name: slideOut;
+  //   animation-duration: 2s;
+  //   animation-delay: 3s;
+  //   animation-fill-mode: forwards;
+  // }
 
-  @keyframes slideIn {
-    0% {
-      left: 150%;
-    }
+  // @keyframes slideIn {
+  //   0% {
+  //     left: 150%;
+  //   }
 
-    100% {
-      left: 0px;
-    }
-  }
+  //   100% {
+  //     left: 0px;
+  //   }
+  // }
 
-  .slideIn {
-    animation-name: slideIn;
-    animation-duration: 2s;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-  }
+  // .slideIn {
+  //   animation-name: slideIn;
+  //   animation-duration: 2s;
+  //   animation-delay: 3s;
+  //   animation-fill-mode: forwards;
+  // }
 }
