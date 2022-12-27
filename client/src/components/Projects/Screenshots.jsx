@@ -1,6 +1,5 @@
 function Screenshots({ props }) {
     const { screenshots } = props
-    console.log("Screenshots>> ", screenshots)
 
     return (
         <div className='light'>

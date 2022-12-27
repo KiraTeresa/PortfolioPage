@@ -5,6 +5,7 @@ import ProjectCard from "../../components/Projects/ProjectCard"
 import Features from "../../components/Projects/Features";
 import Technologies from "../../components/Projects/Technologies";
 import Screenshots from "../../components/Projects/Screenshots";
+import Loading from "../../components/Loading/Loading";
 
 function ProjectsDetail() {
     const { slug } = useParams()
@@ -16,7 +17,7 @@ function ProjectsDetail() {
     }, [slug])
 
     if (isLoading) {
-        return <div>Loading....</div>
+        return <Loading />
     }
 
     const { description, tech, screenshots } = project

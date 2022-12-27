@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Loading from "../../components/Loading/Loading";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import apiClient from "../../services/apiClient";
 
@@ -15,7 +16,7 @@ function ProjectsPage() {
     }, [])
 
     if (isLoading) {
-        return <div>Loading....</div>
+        return <Loading />
     }
 
     return (
