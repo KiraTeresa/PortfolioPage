@@ -7,7 +7,7 @@ router.post('/', async (req, res, next) => {
 
     // prepare data
     const data = {
-        from: email,
+        from: 'my@portfoliopage.com',
         to: 'kira@kira.com',
         subject: `${sender} via contact form`,
         text: message,
