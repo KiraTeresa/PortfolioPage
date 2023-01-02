@@ -1,20 +1,16 @@
 footer {
     height: 70px;
+    padding: 20px 100px;
     font-weight: bold;
-    font-size: 18px;
     display: flex;
     justify-content: center;
-    // border: red dotted 1px;
+    border-top: rgba(246, 249, 248, .5) solid 1px;
 
-    div {
+    .footer-wrapper {
         height: 100%;
         display: flex;
         align-items: center;
         gap: 20px;
-
-        img {
-            height: 25px;
-        }
     }
 
     @media (max-width: 768px) {

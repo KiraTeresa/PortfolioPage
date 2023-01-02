@@ -12,7 +12,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <div>
+      <div className="navigation">
         <Link to="/about">
           About
         </Link>

@@ -34,6 +34,7 @@
             max-width: 500px;
             margin: 0;
             text-align: start;
+            font-size: 3.5rem;
             position: relative;
             // border: yellow dashed 1px;
         }
@@ -73,7 +74,7 @@
 
     div {
         text-align: center;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-style: italic;
     }
 }
@@ -82,13 +83,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 1rem;
 
     div {
-        font-size: 24px;
-        line-height: 125%;
+        // font-size: 3rem;
+        // line-height: 125%;
 
         p {
             text-align: justify;
+            font-size: 1.7rem;
         }
     }
 }
@@ -101,9 +104,10 @@
     gap: 50px;
 
     ul {
-        font-size: 32px;
+        // font-size: 32px;
 
         li {
+            font-size: 2rem;
             list-style: none;
             line-height: 150%;
         }

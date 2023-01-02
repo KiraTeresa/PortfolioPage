@@ -22,11 +22,14 @@
     flex-direction: column;
     // align-items: center;
     justify-content: center;
-    // border: dotted pink 1px;
 
-    .latesProj {
-        margin-bottom: 50px;
-    }
+    // h2 {
+    //     border: dotted pink 1px;
+    // }
+
+    // .latesProj {
+    //     margin-bottom: 50px;
+    // }
 
     .project-wrapper {
         display: flex;
@@ -58,7 +61,7 @@
 
         img {
             max-width: 100%;
-            height: 100%;
+            height: 80%;
             border-radius: 25px;
             align-self: end;
             // opacity: .25;

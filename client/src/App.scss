@@ -26,6 +26,7 @@ Colors
     // padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
     // text-align: center;
   }
 
@@ -33,20 +34,21 @@ Colors
     display: block;
     color: inherit;
     font-family: inherit;
+    // font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
   }
 
   h2 {
-    font-size: 38px;
-    margin: 50px 0;
+    font-size: 2.5rem;
+    margin: 3rem 0;
     font-weight: lighter;
     font-family: 'Zen Dots';
   }
 
   h3 {
     margin: 0;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   /* 
@@ -68,7 +70,7 @@ Colors
     border-radius: 25px;
     padding: 10px 20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.5rem;
 
     &.btn-1 {
       background-color: #F6F9F8;
@@ -93,48 +95,61 @@ Colors
     &.top {
       margin-top: 70px;
     }
+  }
 
-    /* 
-    ---------------------------------------------
-    breakpoint 1024px
-    --------------------------------------------- 
-    */
-    @media (max-width: 1024px) {
+  /* 
+  ---------------------------------------------
+  breakpoint 1024px
+  --------------------------------------------- 
+  */
+  @media (max-width: 1024px) {
+    * {
+      font-size: calc(16px + 6 * ((100vw - 500px) / 1024));
+    }
 
+    section {
       border: purple solid 1px;
       max-width: 976px;
       margin: auto;
+    }
+  }
 
+  /* 
+  ---------------------------------------------
+  breakpoint 768px
+  --------------------------------------------- 
+  */
+  @media (max-width: 768px) {
+    * {
+      font-size: calc(16px + 6 * ((100vw - 300px) / 768));
     }
 
-    /* 
-    ---------------------------------------------
-    breakpoint 768px
-    --------------------------------------------- 
-    */
-    @media (max-width: 768px) {
-
+    section {
       border: blue solid 1px;
-      max-width: 736;
+      max-width: 736px;
       margin: auto;
+    }
+  }
 
+  /* 
+  ---------------------------------------------
+  breakpoint 480px
+  --------------------------------------------- 
+  */
+  @media (max-width: 480px) {
+    * {
+      font-size: calc(16px + 6 * ((100vw - 200px) / 480));
     }
 
-    /* 
-    ---------------------------------------------
-    breakpoint 480px
-    --------------------------------------------- 
-    */
-    @media (max-width: 480px) {
-
+    section {
       border: green solid 1px;
       max-width: 90%;
       margin: auto;
       padding-left: 0;
       padding-right: 0;
-
     }
   }
+
 
 
   /* 

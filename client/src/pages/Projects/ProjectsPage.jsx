@@ -20,13 +20,13 @@ function ProjectsPage() {
     }
 
     return (
-        <>
+        <div className="project-page">
             {projects.map(proj => {
                 isOdd = !isOdd;
                 return <ProjectCard props={{ proj, isOdd }} key={proj.no} />
             }
             )}
-        </>
+        </div>
     )
 }
 
