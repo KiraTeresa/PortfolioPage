@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import './contact.scss'
 // import apiClient from '../../services/apiClient'
 import emailjs from '@emailjs/browser';
@@ -16,10 +16,10 @@ function ContactForm() {
         e.preventDefault()
 
         // use emailjs (frontend) for sending email:
-        emailjs.sendForm(`${process.env.SERVICE_ID}`, `${process.env.TEMPLATE_ID}`, form.current, `${process.env.P_KEY}`).then((result) => {
+        emailjs.sendForm(`${process.env.SERVICE_ID}`, `${process.env.TEMPLATE_ID}`, form.current, `${process.env.USER_ID}`).then((result) => {
             console.log(result.text)
             // setData({ sender: "", email: "", message: "" })
-        }).catch(err => console.log('Error: ', err.text))
+        }).catch(err => console.log('Error: ', err))
 
         // use nodemailer (backend) for sending email:
         // apiClient.post('/contact', data).then((result) => {
