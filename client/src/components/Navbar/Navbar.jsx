@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import Home from "../../assets/images/KiraTeresaSoba.png"
+import { useEffect } from "react";
 
 
 function Navbar() {
@@ -13,17 +14,17 @@ function Navbar() {
       </div>
 
       <div className="navigation">
-        <Link to="/about">
+        <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
           About
-        </Link>
+        </NavLink>
 
-        <Link to="/projects">
+        <NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>
           Projects
-        </Link>
+        </NavLink>
 
-        <Link to="/contact">
+        <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
           Contact
-        </Link>
+        </NavLink>
       </div>
     </nav>
   );

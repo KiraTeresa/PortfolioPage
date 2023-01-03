@@ -15,6 +15,10 @@ nav {
 
         a {
             font-size: 1.5rem;
+
+            &.active {
+                text-decoration: underline;
+            }
         }
     }
 
