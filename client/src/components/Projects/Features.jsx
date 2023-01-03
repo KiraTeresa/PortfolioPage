@@ -6,7 +6,14 @@ function Features({ props }) {
             <section className='about'>
                 <h2 className='zenDots'>Features</h2>
                 <div>
-                    <p>{description}</p>
+                    {description.map((feat, index) => {
+                        return (
+                            <div key={index}>
+                                <h3>{feat.feature}</h3>
+                                <p>{feat.descr}</p>
+                            </div>
+                        )
+                    })}
                 </div>
             </section>
         </div>

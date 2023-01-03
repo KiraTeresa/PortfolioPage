@@ -4,7 +4,7 @@ import apiClient from "../../services/apiClient";
 import ProjectCard from "../../components/Projects/ProjectCard"
 import Features from "../../components/Projects/Features";
 import Technologies from "../../components/Projects/Technologies";
-import Screenshots from "../../components/Projects/Screenshots";
+// import Screenshots from "../../components/Projects/Screenshots";
 import Loading from "../../components/Loading/Loading";
 
 function ProjectsDetail() {
@@ -20,14 +20,14 @@ function ProjectsDetail() {
         return <Loading />
     }
 
-    const { description, tech, screenshots } = project
+    const { description, tech } = project
 
     return (
         <div className='proj-detail-wrapper'>
             <ProjectCard props={{ proj: project, isOdd: true }} />
             <Features props={{ description }} />
             <Technologies props={{ tech }} />
-            <Screenshots props={{ screenshots }} />
+            {/* <Screenshots props={{ screenshots }} /> */}
             {/* <div>{description}</div>
             <div>{image}</div> */}
         </div>

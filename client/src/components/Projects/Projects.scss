@@ -1,4 +1,10 @@
 .proj-detail-wrapper {
+    .about {
+        p {
+            margin: 0 0 1rem 1rem;
+        }
+    }
+
     .screenshot-wrapper {
         display: flex;
         justify-content: center;
@@ -78,7 +84,19 @@
     }
 
     .short-description {
-        font-size: 24px;
+        font-size: 1.5rem;
+
+        .collab {
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h4,
+            a {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     &:hover {
