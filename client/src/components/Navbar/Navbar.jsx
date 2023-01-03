@@ -1,7 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import Home from "../../assets/images/KiraTeresaSoba.png"
-import { useEffect } from "react";
 
 
 function Navbar() {

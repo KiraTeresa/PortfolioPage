@@ -13,8 +13,8 @@ function Footer() {
                 {/* <div> */}
                 {/* <a href="https://github.com/KiraTeresa"><img src={GitHub} alt="GitHub Logo" /></a>
                     <a href="https://www.linkedin.com/in/kira-teresa-soba/"><img src={LinkedIn} alt="LinkedIn Logo" /></a> */}
-                <a href="https://www.linkedin.com/in/kira-teresa-soba/" className='zenDots'>Linkedin</a>
-                <a href="https://github.com/KiraTeresa" className='zenDots'>GitHub</a>
+                <a href="https://www.linkedin.com/in/kira-teresa-soba/" target="_blank" rel="noreferrer" className='zenDots'>Linkedin</a>
+                <a href="https://github.com/KiraTeresa" target="_blank" rel="noreferrer" className='zenDots'>GitHub</a>
                 <Link to="/legal-notice">legal notice</Link>
                 {/* </div> */}
                 <p>© {currentYear}, Kira Teresa Soba</p>
