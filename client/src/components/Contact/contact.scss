@@ -1,28 +1,25 @@
 .contact {
     .form {
         display: flex;
-        // justify-content: flex-start;
+        justify-content: space-between;
         align-items: center;
-        gap: 100px;
-        border: red dashed 1px;
-
-        // h2 {
-        //     align-self: center;
-        // }
+        // gap: 100px;
+        // border: red dashed 1px;
 
         form {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 1rem;
             width: 50%;
             // min-height: 100%;
-            border: blue solid 1px;
-            font-size: 20px;
+            // border: blue solid 1px;
+            // font-size: 1.5rem;
 
             label {
                 display: flex;
                 flex-direction: column;
-                font-weight: bold;
+                // font-weight: bold;
+                font-size: 1.5rem;
             }
 
             input,
@@ -31,6 +28,7 @@
                 padding: 10px;
                 background-color: #D9D9D9;
                 border: none;
+                font-size: 1.2rem;
             }
 
             textarea {
