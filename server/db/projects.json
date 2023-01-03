@@ -3,15 +3,34 @@
         "no": 3,
         "name": "BiMusic",
         "deployment": "https://bimusic.netlify.app/",
-        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introduction": "A networking platform that allows artists to connect with producers and musicians. SPA built as the final project of the Ironhack Web Development Bootcamp, using React and node.js",
+        "description": [
+            {
+                "feature": "User-generated sample library",
+                "descr": "Users can upload samples or finished songs showcasing their work within a community of other musicians."
+            },
+            {
+                "feature": "Publication of collaboration requests",
+                "descr": "Users can find and scout musicians profiles turning ideas into a finished collaboration."
+            },
+            {
+                "feature": "Feedback sharing",
+                "descr": "Users can post comments under music projects sharing ideas and suggestions."
+            },
+            {
+                "feature": "Direct Messaging platform",
+                "descr": "Users can contact each other directly via an internal chat to exchange information (project related)."
+            }
+        ],
         "tech": [
             "React.js",
             "node.js",
             "express.js",
             "mongoDB",
             "cloudinary",
-            "socket.io"
+            "socket.io",
+            "JavaScript",
+            "SCSS"
         ],
         "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671817970/BiMusic_Screenshot-2_yqn9bo.png",
         "screenshots": [
@@ -31,20 +50,48 @@
                 "alt": "alt-text-3"
             }
         ],
+        "contributor": {
+            "name": "Nico Schmock",
+            "github": "https://github.com/nicberger"
+        },
         "published": "November 12, 2022"
     },
     {
         "no": 2,
         "name": "HelgaHelps",
         "deployment": "https://helgahelps.cyclic.app/",
-        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introduction": "Second project of the Ironhack Web Devolopment Bootcamp. A festival planner app, built using node.js, express.js, mongoose, mongoDB, handlebars, Rest API.",
+        "description": [
+            {
+                "feature": "Create or join a group",
+                "descr": "Connect with the group of people you like to go on a festival with."
+            },
+            {
+                "feature": "Add festivals",
+                "descr": "Add all the festivals to your group, you and your crew what to go to."
+            },
+            {
+                "feature": "Share the car",
+                "descr": "Are you going to drive and have some empty seats to fill? Post your car with all the neccessary information about departure, return and available seats, so your friends can join."
+            },
+            {
+                "feature": "Add bands to your personal setlist",
+                "descr": "Plan ahead and add all your favourite acts to your personal list, to make sure not to miss any. You can even see who else of your crew is eager to see them perform live on stage, so you don't have to go alone."
+            },
+            {
+                "feature": "Listen to some tunes",
+                "descr": "Listen to previews of the top tracks of the bands coming to your festival, in order to get in the right mood for the upcoming event."
+            }
+        ],
         "tech": [
             "JavaScript",
             "node.js",
             "express.js",
+            "mongoose",
             "mongoDB",
-            "handlebars"
+            "handlebars",
+            "Rest API",
+            "CSS"
         ],
         "image": "https://res.cloudinary.com/ddt1sjdzm/image/upload/v1671221381/HelgaHelps_Screenshot_idpu9u.png",
         "screenshots": [
@@ -70,8 +117,25 @@
         "no": 1,
         "name": "Climbing Game",
         "deployment": "https://kirateresa.github.io/climbing-game-project/",
-        "introduction": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "introduction": "Browser game built using p5js. First project of the Ironhack Web Development Bootcamp.",
+        "description": [
+            {
+                "feature": "Setup",
+                "descr": "The background is continuously moving top to bottom and makes the climber appear to be climbing up. Use the left/right arrows to move the player. Pressing the space bar will put your quickdraw in a bolt (level 2)."
+            },
+            {
+                "feature": "Obstacles",
+                "descr": "Rocks falling from the top will decrease your energy. Catch a helmet, it will protect you from the rocks (but only once!). Collect quickdraws, as you will need them to win this game. Eat a granola, in order to recharge your energy a bit."
+            },
+            {
+                "feature": "Level 1 - Top Rope Climbing",
+                "descr": "Collect enough quickdraws and wear a helmet to finish this level. Avoid the rocks, they will lower your energy. Being too tired ends the game."
+            },
+            {
+                "feature": "Level 2 - Lead Climbing",
+                "descr": "Attach the quickdraws you've collected in the previous level to the bolts. This will keep you save during the climb. Missing a bolt means a decrease in your safety. Being too tired or climbing without being save will end the game."
+            }
+        ],
         "tech": [
             "JavaScript",
             "p5.js"
