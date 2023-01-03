@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 // import LinkedIn from '../../assets/images/LI-Logo.png'
 
 function Footer() {
+    const currentYear = new Date().getFullYear()
+
     return (
         <footer className="dark">
             <div className='footer-wrapper'>
@@ -15,6 +17,7 @@ function Footer() {
                 <a href="https://github.com/KiraTeresa" className='zenDots'>GitHub</a>
                 <Link to="/legal-notice">legal notice</Link>
                 {/* </div> */}
+                <p>© {currentYear}, Kira Teresa Soba</p>
             </div>
         </footer>
     )
