@@ -11,7 +11,7 @@ function ProjectCard({ props }) {
 
     return (
         <div className='dark'>
-            <section className={`project-card `}>
+            <section className='project-card'>
                 <h2 className='latesProj'>{onHomepage ? "</> Latest project" : ""}</h2>
                 <div className={`project-wrapper ${isOdd ? '' : 'even'}`}>
                     <div className='info'>
