@@ -42,7 +42,7 @@ function ContactForm() {
                     <label>Your message for me
                         <textarea name='message' type='text' required></textarea>
                     </label>
-                    <button type='submit'>send</button>
+                    <button type='submit' className='btn-2'>send</button>
                 </form>
                 {/* with nodemailer */}
                 {/* <form onSubmit={handleSubmit}>

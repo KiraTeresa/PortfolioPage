@@ -67,10 +67,15 @@ Colors
   }
 
   button {
-    border-radius: 25px;
+    border-radius: 1.5rem;
     padding: 10px 20px;
     font-weight: bold;
     font-size: 1.5rem;
+
+    &:hover {
+      cursor: pointer;
+      // background: linear-gradient(to right, #F6F9F8, #051A16);
+    }
 
     &.btn-1 {
       background-color: #F6F9F8;
@@ -78,8 +83,12 @@ Colors
     }
 
     &.btn-2 {
-      background-color: #F1875E;
+      background-color: #051A16;
       color: #F6F9F8;
+
+      &:hover {
+        background-color: #60b9a9;
+      }
     }
   }
 
