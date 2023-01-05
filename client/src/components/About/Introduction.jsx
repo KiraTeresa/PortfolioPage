@@ -3,7 +3,7 @@ import MeImage from '../../assets/images/ks22-037-marcgilsdorf-Kopie.png'
 
 function Introduction() {
     return (
-        <div className='dark shape'>
+        <div className='dark'>
             <section className='introduction top'>
                 <div className='img-wrapper'>
                     <img src={MeImage} alt="Kira Teresa Soba" />
