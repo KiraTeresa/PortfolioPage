@@ -21,7 +21,7 @@ function HomePage() {
   }
 
   return (
-    <div className="container dark">
+    <div className="container">
       {/* <MyImage /> */}
       <Introduction />
       {/* <Quotation /> */}
