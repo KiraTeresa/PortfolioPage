@@ -25,17 +25,15 @@ function Introduction() {
 
 
     return (
-        <div className='dark shape'>
-            <section className='introduction top'>
-                <div className='img-wrapper'>
-                    <img src={MeImage} alt="Kira Teresa Soba" />
-                </div>
-                <div className={`text ${isVisible ? "" : "hide"}`}>
-                    <p className='slideOut'>Hi. I'm Kira</p>
-                    <p className='zenDots slideOut'>Fullstack Web Developer</p>
-                </div>
-            </section >
-        </div>
+        <section className='introduction'>
+            <div className='img-wrapper'>
+                <img src={MeImage} alt="Kira Teresa Soba" />
+            </div>
+            <div className={`text ${isVisible ? "" : "hide"}`}>
+                <p className='slideOut'>Hi. I'm Kira</p>
+                <p className='zenDots slideOut'>Fullstack Web Developer</p>
+            </div>
+        </section >
     )
 }
 

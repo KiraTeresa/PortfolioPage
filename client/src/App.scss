@@ -1,66 +1,24 @@
 .App {
-  /* 
----------------------------------------------
-Colors
---------------------------------------------- 
-*/
-
-  .dark {
-    background-color: #051A16;
-    color: #F6F9F8;
-  }
-
-  .light {
-    background-color: #F6F9F8;
-    color: #051A16;
-  }
-
-  /* 
-  ---------------------------------------------
-  Reset CSS
-  --------------------------------------------- 
-  */
-
-  * {
-    // margin: 0 auto;
-    // padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    // text-align: center;
-  }
-
-  a {
-    display: block;
-    color: inherit;
-    font-family: inherit;
-    // font-size: 1.5rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-    margin: 3rem 0;
-    font-weight: lighter;
-    font-family: 'Zen Dots';
-  }
-
-  h3 {
-    margin: 0;
-    font-size: 2rem;
-  }
-
-  /* 
-  ---------------------------------------------
-  Global Styles
-  --------------------------------------------- 
-  */
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 100vh;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 55%;
+    height: 100%;
+    width: 45%;
+    background-color: #F6F9F8;
+    // background-color: yellow;
+    // border-top-left-radius: 20rem;
+    opacity: .2;
+    z-index: 1;
+  }
 
   .zenDots {
     font-family: 'Zen Dots';
@@ -92,22 +50,54 @@ Colors
     }
   }
 
-  >div {
-    border: blue solid 1px;
+  .container {
+    // background-color: #F1875E;
+    position: relative;
+    // height: 100%;
+    background-color: #051A16;
+    color: #F6F9F8;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 55%;
+      width: 45%;
+      height: 100%;
+      background-color: #051A16;
+      border-bottom-right-radius: 20rem;
+      // border: turquoise solid 1px;
+      z-index: 2;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      height: 100%;
+      width: 55%;
+      background-color: #F6F9F8;
+      // background-color: yellow;
+      border-top-left-radius: 20rem;
+      opacity: .2;
+    }
   }
 
   section {
-    margin: 70px auto;
+    margin: 0 auto;
     // padding: 20px;
     // min-height: 50vh;
-    height: 80vh;
+    // height: 80vh;
     width: 80%;
-    max-width: 1232px;
-    border: 1px solid red;
+    max-width: 1700px;
+    // max-width: 1232px;
+    position: relative;
+    z-index: 2;
 
-    &.top {
-      margin-top: 70px;
-    }
+    // &.top {
+    //   margin-top: 70px;
+    // }
   }
 
   /* 

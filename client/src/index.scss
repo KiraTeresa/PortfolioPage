@@ -1,0 +1,61 @@
+/* 
+---------------------------------------------
+Reset CSS
+--------------------------------------------- 
+*/
+
+* {
+  // margin: 0 auto;
+  // padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  // text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+/* 
+---------------------------------------------
+Colors
+--------------------------------------------- 
+*/
+
+// .dark {
+//   background-color: #051A16;
+//   color: #F6F9F8;
+// }
+
+.light {
+  background-color: #F6F9F8;
+  color: #051A16;
+}
+
+/* 
+---------------------------------------------
+Global Styles
+--------------------------------------------- 
+*/
+
+a {
+  display: block;
+  color: inherit;
+  font-family: inherit;
+  // font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 3rem 0;
+  font-weight: lighter;
+  font-family: 'Zen Dots';
+}
+
+h3 {
+  margin: 0;
+  font-size: 2rem;
+}

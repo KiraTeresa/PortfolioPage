@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import "./Navbar.scss";
+import "./navbar.scss";
 import Home from "../../assets/images/KiraTeresaSoba.png"
 
 

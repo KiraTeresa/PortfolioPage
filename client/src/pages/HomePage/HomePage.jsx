@@ -3,6 +3,8 @@ import Quotation from "../../components/About/Quotation";
 import ProjectCard from "../../components/Projects/ProjectCard";
 import apiClient from '../../services/apiClient';
 import { useEffect, useState } from 'react';
+import MyImage from "../../components/About/Image";
+import "./homepage.scss"
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -19,7 +21,8 @@ function HomePage() {
   }
 
   return (
-    <div>
+    <div className="container dark">
+      {/* <MyImage /> */}
       <Introduction />
       {/* <Quotation /> */}
       {/* <ProjectCard props={{ proj: latestProject, isOdd: true }} /> */}

@@ -7,7 +7,7 @@ function Footer() {
     const currentYear = new Date().getFullYear()
 
     return (
-        <footer className="dark">
+        <footer className='dark'>
             <div className='footer-wrapper'>
                 {/* <div>Kira Teresa Soba, visit me on</div> */}
                 {/* <div> */}
