@@ -16,8 +16,6 @@
         }
     }
 
-
-
     .text {
         height: fit-content;
         width: fit-content;
@@ -110,6 +108,62 @@
             font-size: 2rem;
             list-style: none;
             line-height: 150%;
+        }
+    }
+}
+
+
+// ? ###############################
+// ? Testing Styles
+// ? ###############################
+
+.shape {
+    position: fixed;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        // left: 40%;
+        right: 55%;
+        height: 40%;
+        width: 5%;
+        background-color: #F6F9F8;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 55%;
+        width: 5%;
+        height: 40%;
+        background-color: #051A16;
+        border-bottom-right-radius: 20rem;
+        // border: turquoise solid 1px;
+    }
+
+    .img-wrapper {
+        // border: red solid 1px;
+        justify-self: flex-start;
+        z-index: 1;
+    }
+
+    .text {
+        color: #051A16;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 45%;
+            height: 80%;
+            width: 55%;
+            background-color: #F6F9F8;
+            // background-color: yellow;
+            border-top-left-radius: 20rem;
+            // opacity: .5;
         }
     }
 }
