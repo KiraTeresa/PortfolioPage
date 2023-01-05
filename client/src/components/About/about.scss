@@ -128,7 +128,7 @@
         // left: 40%;
         right: 55%;
         height: 40%;
-        width: 5%;
+        width: 45%;
         background-color: #F6F9F8;
     }
 
@@ -137,7 +137,7 @@
         position: absolute;
         bottom: 0;
         right: 55%;
-        width: 5%;
+        width: 45%;
         height: 40%;
         background-color: #051A16;
         border-bottom-right-radius: 20rem;
@@ -164,6 +164,10 @@
             // background-color: yellow;
             border-top-left-radius: 20rem;
             // opacity: .5;
+        }
+
+        &.hide {
+            color: blue;
         }
     }
 }

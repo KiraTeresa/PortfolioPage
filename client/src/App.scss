@@ -92,14 +92,18 @@ Colors
     }
   }
 
+  >div {
+    border: blue solid 1px;
+  }
+
   section {
-    margin: 0 auto;
+    margin: 70px auto;
     // padding: 20px;
-    min-height: 50vh;
-    // max-height: 600px;
+    // min-height: 50vh;
+    height: 80vh;
     width: 80%;
     max-width: 1232px;
-    // border: 1px solid #051A16;
+    border: 1px solid red;
 
     &.top {
       margin-top: 70px;

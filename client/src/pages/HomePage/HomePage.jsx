@@ -21,8 +21,8 @@ function HomePage() {
   return (
     <div>
       <Introduction />
-      <Quotation />
-      <ProjectCard props={{ proj: latestProject, isOdd: true }} />
+      {/* <Quotation /> */}
+      {/* <ProjectCard props={{ proj: latestProject, isOdd: true }} /> */}
     </div>
   );
 }
