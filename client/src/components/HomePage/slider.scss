@@ -1,11 +1,15 @@
 .slider {
-    background-color: pink;
+    // background-color: pink;
     min-height: 10rem;
     max-height: 50%;
 
+    button {
+        background-color: unset;
+    }
+
     .introduction {
         width: 100%;
-        background-color: aquamarine;
+        // background-color: aquamarine;
         // justify-content: center;
         align-items: center;
         text-align: center;
