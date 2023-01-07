@@ -22,8 +22,8 @@ function HomePage() {
 
   return (
     <div className="container">
-      {/* <MyImage /> */}
-      <Introduction />
+      <MyImage className={'orange'} />
+      <Introduction className={'yellow'} />
       {/* <Quotation /> */}
       {/* <ProjectCard props={{ proj: latestProject, isOdd: true }} /> */}
     </div>

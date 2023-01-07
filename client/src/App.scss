@@ -68,26 +68,16 @@
   .container {
     // background-color: #F1875E;
     position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1700px;
     // height: 100%;
     // background-color: #051A16;
     color: #F6F9F8;
-    // z-index: -1;
-  }
-
-  section {
-    margin: 0 auto;
-    // padding: 20px;
-    // min-height: 50vh;
-    // height: 80vh;
-    width: 80%;
-    max-width: 1700px;
-    // max-width: 1232px;
-    position: relative;
-    z-index: 2;
-
-    // &.top {
-    //   margin-top: 70px;
-    // }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: turquoise dashed 3px;
   }
 
   /* 
