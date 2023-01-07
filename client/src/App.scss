@@ -5,8 +5,9 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   position: relative;
-  background-color: #051A16;
-  background: linear-gradient(to right, rgba(5, 26, 22, .8) 45%, #051A16 45%);
+  // background-color: rgba(5, 26, 22, .8);
+  // background: linear-gradient(to right, rgba(5, 26, 22, .8) 45%, #051A16 45%);
+  // background: linear-gradient(to left, rgba(5, 26, 22, .8) 55%, #051A16 55%);
 
   &::before {
     content: "";
@@ -15,8 +16,8 @@
     right: 55%;
     width: 45%;
     height: 100%;
-    background-color: #051A16;
-    border-bottom-right-radius: 30vh;
+    background-color: #354744;
+    // border-bottom-right-radius: 30vh;
     // border: turquoise solid 1px;
     // z-index: 6;
   }
@@ -28,11 +29,12 @@
     left: 45%;
     height: 100%;
     width: 55%;
-    background-color: #F6F9F8;
+    background-color: #051a16;
     // border: red solid 1px;
     // background-color: yellow;
-    border-top-left-radius: 30vh;
-    opacity: .2;
+    // border-top-left-radius: 30vh;
+    // opacity: .2;
+    z-index: -1;
   }
 
   .zenDots {
@@ -80,9 +82,9 @@
   .container {
     // background-color: #F1875E;
     position: relative;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1700px;
+    margin: 0;
+    width: 100%;
+    // max-width: 1700px;
     // height: 100%;
     // background-color: #051A16;
     color: #F6F9F8;
@@ -90,6 +92,34 @@
     justify-content: center;
     align-items: center;
     // border: turquoise dashed 3px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 55%;
+      width: 45%;
+      height: 100%;
+      background-color: #051A16;
+      border-bottom-right-radius: 30vh;
+      // border: turquoise solid 1px;
+      // z-index: 6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+      height: 100%;
+      width: 55%;
+      background-color: #354744;
+      // border: red solid 1px;
+      // background-color: yellow;
+      border-top-left-radius: 30vh;
+      // opacity: .2;
+      // z-index: 1;
+    }
   }
 
   /* 
@@ -101,7 +131,7 @@
   section {
     // border: red solid 1px;
     height: 100%;
-    width: 50%;
+    // width: 50%;
     display: flex;
     // align-items: center;
     // justify-content: center;

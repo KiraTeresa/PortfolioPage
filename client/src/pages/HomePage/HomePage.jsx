@@ -12,7 +12,7 @@ function HomePage() {
   const [positions, setPositions] = useState({
     myImage: '',
     introduction: '',
-    quotation: 'hidden',
+    quotation: '',
     projectCard: 'hidden'
   })
 
