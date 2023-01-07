@@ -1,10 +1,10 @@
 import MeImage from '../../assets/images/ks22-037-marcgilsdorf-Kopie.png'
 
-function MyImage({ className }) {
+function MyImage({ position }) {
     return (
-        <div className={`${className}`}>
+        <section className={`${position} me-image`}>
             <img src={MeImage} alt="Kira Teresa Soba" />
-        </div>
+        </section>
     )
 }
 

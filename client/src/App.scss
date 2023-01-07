@@ -16,7 +16,7 @@
     width: 45%;
     height: 100%;
     background-color: #051A16;
-    border-bottom-right-radius: 20rem;
+    border-bottom-right-radius: 30vh;
     // border: turquoise solid 1px;
     // z-index: 6;
   }
@@ -31,13 +31,19 @@
     background-color: #F6F9F8;
     // border: red solid 1px;
     // background-color: yellow;
-    border-top-left-radius: 20rem;
+    border-top-left-radius: 30vh;
     opacity: .2;
   }
 
   .zenDots {
     font-family: 'Zen Dots';
   }
+
+  /* 
+  ---------------------------------------------
+  Buttons
+  --------------------------------------------- 
+  */
 
   button {
     border-radius: 1.5rem;
@@ -65,6 +71,12 @@
     }
   }
 
+  /* 
+  ---------------------------------------------
+  Page Container
+  --------------------------------------------- 
+  */
+
   .container {
     // background-color: #F1875E;
     position: relative;
@@ -77,7 +89,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: turquoise dashed 3px;
+    // border: turquoise dashed 3px;
+  }
+
+  /* 
+  ---------------------------------------------
+  Component Section
+  --------------------------------------------- 
+  */
+
+  section {
+    // border: red solid 1px;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
 
   /* 

@@ -10,10 +10,20 @@
 //     display: flex;
 // }
 
-.orange {
-    border: orange 2px dashed;
+.me-image {
+    align-self: end;
+    // background-color: pink;
+    max-height: 90%;
+    width: 100%;
 }
 
-.yellow {
-    border: yellow 2px dashed;
+.container {
+
+    .hidden {
+        display: none;
+    }
+
+    // flex-wrap: wrap;
+    // flex-direction: row-reverse;
+    // overflow: scroll;
 }

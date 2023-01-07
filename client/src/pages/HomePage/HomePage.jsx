@@ -9,6 +9,12 @@ import "./homepage.scss"
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
   const [latestProject, setLatestProject] = useState({})
+  const [positions, setPositions] = useState({
+    myImage: '',
+    introduction: '',
+    quotation: 'hidden',
+    projectCard: 'hidden'
+  })
 
   useEffect(() => {
     apiClient.get("/projects/latest").then(result => {
@@ -20,11 +26,13 @@ function HomePage() {
     return <div>Loading....</div>
   }
 
+  const { myImage, introduction, quotation, projectCard } = positions
+
   return (
     <div className="container">
-      <MyImage className={'orange'} />
-      <Introduction className={'yellow'} />
-      {/* <Quotation /> */}
+      <MyImage position={`${myImage}`} />
+      <Introduction position={`${introduction}`} />
+      <Quotation position={`${quotation}`} />
       {/* <ProjectCard props={{ proj: latestProject, isOdd: true }} /> */}
     </div>
   );

@@ -3,7 +3,7 @@ import MeImage from '../../assets/images/ks22-037-marcgilsdorf-Kopie.png'
 import { useEffect, useState } from 'react';
 
 
-function Introduction({ className }) {
+function Introduction({ position }) {
     const [isVisible, setIsVisible] = useState(true)
 
     const listenToScroll = () => {
@@ -25,7 +25,7 @@ function Introduction({ className }) {
 
 
     return (
-        <section className={`text ${className}`}>
+        <section className={`text ${position}`}>
             {/* <div className='img-wrapper'>
                 <img src={MeImage} alt="Kira Teresa Soba" />
             </div> */}
