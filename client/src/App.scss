@@ -92,7 +92,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // border: turquoise dashed 3px;
+    border: turquoise dashed 3px;
 
     &::before {
       content: "";
@@ -130,12 +130,13 @@
   */
 
   section {
-    // border: red solid 1px;
+    border: red solid 1px;
     height: 100%;
     // width: 50%;
     display: flex;
     // align-items: center;
     // justify-content: center;
+    z-index: 1;
   }
 
   /* 
