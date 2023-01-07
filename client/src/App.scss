@@ -8,6 +8,7 @@
   // background-color: rgba(5, 26, 22, .8);
   // background: linear-gradient(to right, rgba(5, 26, 22, .8) 45%, #051A16 45%);
   // background: linear-gradient(to left, rgba(5, 26, 22, .8) 55%, #051A16 55%);
+  // z-index: -1;
 
   &::before {
     content: "";
@@ -19,7 +20,7 @@
     background-color: #354744;
     // border-bottom-right-radius: 30vh;
     // border: turquoise solid 1px;
-    // z-index: 6;
+    z-index: -1;
   }
 
   &::after {
