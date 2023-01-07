@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      
+      <div className="main-container">
       <Routes className="shape">
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -30,7 +30,7 @@ function App() {
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-
+      </div>
       <Footer/>      
     </div>
   );

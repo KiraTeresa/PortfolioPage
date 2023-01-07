@@ -25,13 +25,13 @@ function Introduction({ position }) {
 
 
     return (
-        <section className={`text ${position}`}>
+        <section className={`introduction`}>
             {/* <div className='img-wrapper'>
                 <img src={MeImage} alt="Kira Teresa Soba" />
             </div> */}
             {/* <div className={`text ${isVisible ? "" : "hide"}`}> */}
-            <p className='slideOut'>Hi. I'm Kira</p>
-            <p className='zenDots slideOut'>Fullstack Web Developer</p>
+            <h2 className='slideOut'>Hi. I'm Kira</h2>
+            <h2 className='zenDots slideOut'>Fullstack Web Developer</h2>
             {/* </div> */}
         </section >
     )

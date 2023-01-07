@@ -1,10 +1,11 @@
-import Introduction from "../../components/About/Introduction";
-import Quotation from "../../components/About/Quotation";
-import ProjectCard from "../../components/Projects/ProjectCard";
+// import Introduction from "../../components/About/Introduction";
+// import Quotation from "../../components/About/Quotation";
+// import ProjectCard from "../../components/Projects/ProjectCard";
 import apiClient from '../../services/apiClient';
 import { useEffect, useState } from 'react';
 import MyImage from "../../components/About/Image";
 import "./homepage.scss"
+import Slider from "../../components/HomePage/Slider";
 
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
@@ -31,8 +32,9 @@ function HomePage() {
   return (
     <div className="container">
       <MyImage position={`${myImage}`} />
-      <Introduction position={`${introduction}`} />
-      <Quotation position={`${quotation}`} />
+      <Slider latestProject={latestProject} />
+      {/* <Introduction position={`${introduction}`} />
+      <Quotation position={`${quotation}`} /> */}
       {/* <ProjectCard props={{ proj: latestProject, isOdd: true }} /> */}
     </div>
   );
