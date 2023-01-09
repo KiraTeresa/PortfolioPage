@@ -1,8 +1,8 @@
 import './about.scss'
 
-function Quotation({ position }) {
+function Quotation({ isVisible }) {
     return (
-        <section className={`${position} quote`}>
+        <section className={`quote ${isVisible ? 'visible' : 'hidden'}`}>
             <div>
                 “Becoming a programmer means to choose a path of continuous learning opportunities. As I am a person who likes taking on challenges and to expand my knowledge, getting into tech was the right way for me.”
                 {/* “If you find passion in what you do, you'll do it good and with joy. That's what I believe in. That's what I found in coding.” */}

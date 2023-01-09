@@ -8,33 +8,37 @@ function Slider({ latestProject }) {
     const elements = ['', 'quote', 'project']
     const [element, setElement] = useState('')
 
-    function back() {
-        const index = elements.indexOf(element)
+    // function back() {
+    //     const index = elements.indexOf(element)
 
-        if (index === 0) {
-            setElement(elements[elements.length - 1])
-        } else {
-            setElement(elements[index - 1])
-        }
-    }
+    //     if (index === 0) {
+    //         setElement(elements[elements.length - 1])
+    //     } else {
+    //         setElement(elements[index - 1])
+    //     }
+    // }
 
-    function next() {
-        const index = elements.indexOf(element)
+    // function next() {
+    //     const index = elements.indexOf(element)
 
-        if (index === elements.length - 1) {
-            setElement(elements[0])
-        } else {
-            setElement(elements[index + 1])
-        }
-    }
+    //     if (index === elements.length - 1) {
+    //         setElement(elements[0])
+    //     } else {
+    //         setElement(elements[index + 1])
+    //     }
+    // }
 
     return (
         <section className='slider'>
             {/* <button onClick={back} classname={'btn-left'}>back</button> */}
-            {element === 'quote' ? <Quotation />
-                : element === 'project' ? <ProjectCard props={{ proj: latestProject, isOdd: true }} />
-                    : <Introduction />
-            }
+            <Introduction isVisible={element === ''} />
+            <Quotation isVisible={element === 'quote'} />
+            <ProjectCard props={{ proj: latestProject, isOdd: true, isVisible: element === 'project' }} />
+
+            {/* {element === 'quote' ? <Quotation position={element === 'quote' ? 'visible fade' : ''} />
+                : element === 'project' ? <ProjectCard position={'visible fade'} props={{ proj: latestProject, isOdd: true }} />
+                    : <Introduction position={'visible fade'} />
+            } */}
             {/* <button onClick={next} classname={'btn-right'}>next</button> */}
             <div className='slideNav-wrapper'>
                 {elements.map((el) => {
