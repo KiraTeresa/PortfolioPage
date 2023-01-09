@@ -2,7 +2,7 @@ import Introduction from '../About/Introduction';
 import Quotation from '../About/Quotation';
 import ProjectCard from '../Projects/ProjectCard';
 import './slider.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Slider({ latestProject }) {
     const elements = ['', 'quote', 'project']
@@ -27,6 +27,20 @@ function Slider({ latestProject }) {
     //         setElement(elements[index + 1])
     //     }
     // }
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const index = elements.indexOf(element)
+
+            if (index === elements.length - 1) {
+                setElement(elements[0])
+            } else {
+                setElement(elements[index + 1])
+            }
+        }, 8000)
+
+        return () => clearTimeout(timer)
+    }, [element])
 
     return (
         <section className='slider'>

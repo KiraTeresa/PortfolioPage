@@ -10,12 +10,12 @@ import Slider from "../../components/HomePage/Slider";
 function HomePage() {
   const [isLoading, setIsLoading] = useState(true)
   const [latestProject, setLatestProject] = useState({})
-  const [positions, setPositions] = useState({
-    myImage: '',
-    introduction: '',
-    quotation: '',
-    projectCard: 'hidden'
-  })
+  // const [positions, setPositions] = useState({
+  //   myImage: '',
+  //   introduction: '',
+  //   quotation: '',
+  //   projectCard: 'hidden'
+  // })
 
   useEffect(() => {
     apiClient.get("/projects/latest").then(result => {
@@ -27,11 +27,11 @@ function HomePage() {
     return <div>Loading....</div>
   }
 
-  const { myImage, introduction, quotation, projectCard } = positions
+  // const { myImage, introduction, quotation, projectCard } = positions
 
   return (
     <div className="container">
-      <MyImage position={`${myImage}`} />
+      <MyImage />
       <Slider latestProject={latestProject} />
       {/* <Introduction position={`${introduction}`} />
       <Quotation position={`${quotation}`} /> */}
