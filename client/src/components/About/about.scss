@@ -31,36 +31,9 @@ Introduction
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    // font-size: 5rem;
-    // padding-bottom: 0;
-    // border: yellow dashed 1px;
-    // height: 100%;
-    // width: 100%;
 
-    @media (max-width: 1024px) {
-        flex-direction: column;
-
-        .text {
-            align-items: center;
-            width: 100%;
-
-            p {
-                text-align: center;
-            }
-        }
-    }
-
-    @media (max-width: 480px) {
-        img {
-            max-width: 100%;
-        }
-
-        .text {
-            p {
-                width: 100%;
-                word-break: normal;
-            }
-        }
+    div {
+        max-width: 35rem;
     }
 }
 

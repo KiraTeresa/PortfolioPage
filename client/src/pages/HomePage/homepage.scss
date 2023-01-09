@@ -11,13 +11,14 @@
 // }
 
 .me-image {
-    align-self: end;
+    // align-self: end;
     //     // background-color: pink;
-    max-height: 90%;
+    max-height: 100%;
     // max-width: 100%;
 
     img {
-        height: 100%;
+        height: 90%;
+        align-self: flex-end;
     }
 }
 

@@ -21,8 +21,8 @@
 
 .slider {
     // background-color: pink;
-    min-height: 10rem;
-    max-height: 50%;
+    // min-height: 10rem;
+    // max-height: 50%;
     position: relative;
 
     section {
@@ -78,6 +78,7 @@
         gap: 1rem;
         justify-content: center;
         align-items: flex-end;
+        margin-bottom: 10rem;
         // position: absolute;
         // bottom: -4rem;
         z-index: 2;
