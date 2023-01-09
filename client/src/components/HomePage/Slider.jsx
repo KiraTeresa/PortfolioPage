@@ -30,13 +30,18 @@ function Slider({ latestProject }) {
 
     return (
         <section className='slider'>
-            <button onClick={back} classname={'btn-left'}>back</button>
+            {/* <button onClick={back} classname={'btn-left'}>back</button> */}
             {element === 'quote' ? <Quotation />
                 : element === 'project' ? <ProjectCard props={{ proj: latestProject, isOdd: true }} />
                     : <Introduction />
             }
-            <button onClick={next} classname={'btn-right'}>next</button>
-        </section>
+            {/* <button onClick={next} classname={'btn-right'}>next</button> */}
+            <div className='slideNav-wrapper'>
+                {elements.map((el) => {
+                    return <div key={el} className={`slideNav ${element === el ? 'active' : ''}`} onClick={() => setElement(el)}></div>
+                })}
+            </div>
+        </section >
     )
 }
 

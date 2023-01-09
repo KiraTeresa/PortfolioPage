@@ -6,22 +6,22 @@ import { useEffect, useState } from 'react';
 function Introduction({ position }) {
     const [isVisible, setIsVisible] = useState(true)
 
-    const listenToScroll = () => {
-        let heightToHide = 2;
-        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    // const listenToScroll = () => {
+    //     let heightToHide = 2;
+    //     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
-        console.log("WinScroll: ", winScroll)
-        if (winScroll > heightToHide) {
-            setIsVisible(false)
-        } else {
-            setIsVisible(true)
-        }
-    }
+    //     console.log("WinScroll: ", winScroll)
+    //     if (winScroll > heightToHide) {
+    //         setIsVisible(false)
+    //     } else {
+    //         setIsVisible(true)
+    //     }
+    // }
 
-    useEffect(() => {
-        window.addEventListener("scroll", listenToScroll)
-        return () => window.removeEventListener("scroll", listenToScroll)
-    }, [listenToScroll])
+    // useEffect(() => {
+    //     window.addEventListener("scroll", listenToScroll)
+    //     return () => window.removeEventListener("scroll", listenToScroll)
+    // }, [listenToScroll])
 
 
     return (

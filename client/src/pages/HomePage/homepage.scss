@@ -10,12 +10,16 @@
 //     display: flex;
 // }
 
-// .me-image {
-//     align-self: end;
-//     // background-color: pink;
-//     max-height: 90%;
-//     width: 100%;
-// }
+.me-image {
+    align-self: end;
+    //     // background-color: pink;
+    max-height: 90%;
+    // max-width: 100%;
+
+    img {
+        height: 100%;
+    }
+}
 
 // .container {
 

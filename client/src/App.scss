@@ -89,8 +89,7 @@
     // height: 100%;
     // background-color: #051A16;
     color: #F6F9F8;
-
-    border: turquoise dashed 3px;
+    // border: turquoise dashed 3px;
 
     &::before {
       content: "";
@@ -122,14 +121,15 @@
   }
 
   .container {
-    // border: yellow 2px solid;
+    border: yellow 2px solid;
     margin: 0 auto;
     height: 100%;
     width: 100%;
-    max-width: 1700px;
+    max-width: 1900px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
     // background-color: yellow;
   }
 
