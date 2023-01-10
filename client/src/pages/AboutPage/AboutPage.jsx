@@ -4,7 +4,7 @@ import ThisIsMe from "../../components/About/ThisIsMe";
 
 function AboutPage() {
   return (
-    <div className="container">
+    <div className="container about">
       <Introduction />
       <ThisIsMe />
       <MyStack />

@@ -48,11 +48,6 @@ function Slider({ latestProject }) {
             <Introduction isVisible={element === ''} />
             <Quotation isVisible={element === 'quote'} />
             <ProjectCard props={{ proj: latestProject, isOdd: true, isVisible: element === 'project' }} />
-
-            {/* {element === 'quote' ? <Quotation position={element === 'quote' ? 'visible fade' : ''} />
-                : element === 'project' ? <ProjectCard position={'visible fade'} props={{ proj: latestProject, isOdd: true }} />
-                    : <Introduction position={'visible fade'} />
-            } */}
             {/* <button onClick={next} classname={'btn-right'}>next</button> */}
             <div className='slideNav-wrapper'>
                 {elements.map((el) => {
